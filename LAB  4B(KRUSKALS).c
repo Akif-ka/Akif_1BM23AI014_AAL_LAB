@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 struct Edge {
@@ -60,12 +59,19 @@ int main() {
     int V = 4;
     int E = 5;
     struct Edge edges[] = {
-        {0, 1, 10},
-        {0, 2, 6},
-        {0, 3, 5},
-        {1, 3, 15},
+        {0, 10, 12},
+        {0, 4, 13},
+        {0, 6, 5},
+        {1, 9, 15},
         {2, 3, 4}
     };
     kruskalMST(edges, V, E);
     return 0;
 }
+
+
+
+OUTPUT:
+Minimum Spanning Tree (MST) edges:
+2 - 3 	4
+1 - 9 	15
